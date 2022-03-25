@@ -2,35 +2,61 @@
     ViewData["Title"] = "Listagem de contatos";
 }
 
-<h1 class="display-4"> Listagem de contatos</h1>
+<div class="text-center">
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Email</th>
-            <th scope="col">Celular</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto@gmail.com</td>
-            <td>55 55555-5555</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton@gmail.com</td>
-            <td>77 77777-7777</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>Larry@gmail.com</td>
-            <td>61 99999-9999</td>
-        </tr>
-    </tbody>
-</table>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button">Adicionar novo contato</a>
+    </div>
+    <br />
+
+    <h1 class="display-4"> Listagem de contatos</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Celular</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto@gmail.com</td>
+                <td>55 55555-5555</td>
+                <th scope="col">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary">Editar</a>
+                        <a role="button" class="btn btn-danger">Apagar</a>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton@gmail.com</td>
+                <td>77 77777-7777</td>
+                <th scope="col">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary">Editar</a>
+                        <a role="button" class="btn btn-danger">Apagar</a>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>Larry@gmail.com</td>
+                <td>61 99999-9999</td>
+                <th scope="col">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary">Editar</a>
+                        <a role="button" class="btn btn-danger">Apagar</a>
+                    </div>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
