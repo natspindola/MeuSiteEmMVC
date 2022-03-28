@@ -13,7 +13,7 @@ namespace MeuSiteEmMVC.Controllers
     {
         public IActionResult Index()
         {
-            HomeModel home = new HomeModel();
+            ContatoModel home = new ContatoModel();
 
             home.Nome = "Natalia Spindola";
             home.Email = "nataliaspindola@teste.com";
