@@ -8,5 +8,6 @@ namespace MeuSiteEmMVC.Repositorio
 {
     interface IContatoRepositorio
     {
+        ContatoModel Adicionar(ContatoModel contato);
     }
 }
