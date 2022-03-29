@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeuSiteEmMVC.Repositorio
 {
-    interface IContatoRepositorio
+    public interface IContatoRepositorio
     {
         ContatoModel Adicionar(ContatoModel contato);
     }
