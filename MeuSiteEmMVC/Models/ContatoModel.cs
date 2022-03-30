@@ -18,7 +18,6 @@ namespace MeuSiteEmMVC.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Digite o telefone do contato")]
-        [EmailAddress(ErrorMessage = "O telefone informado não é válido")]
         public string Telefone { get; set; }
     }
 }
