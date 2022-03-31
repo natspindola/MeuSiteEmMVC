@@ -22,6 +22,32 @@ namespace MeuSiteEmMVC.Controllers
 
             return View(usuarios);
         }
+
+        public IActionResult Criar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Criar(UsuarioModel usuario)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    usuario = _usuarioRepositorio.Adicionar(usuario);
+                    TempData["MensagemSucesso"] = "Usuário cadastrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+
+                return View(usuario);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops, não conseguimos cadastrar esse usuário, tente novamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
     }
 }
 
