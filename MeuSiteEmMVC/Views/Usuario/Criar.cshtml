@@ -32,8 +32,7 @@
 
     <div class="form-group">
         <label for="nome">Perfil</label>
-        <input type="text" asp-for="Perfil" class="form-control" placeholder="Digite o login">
-        <select asp-for="Perfil">
+        <select asp-for="Perfil" class="form-control">
             <option value="0">Selecione</option>
             <option value="@PerfilEnum.Admin">Administrador</option>
             <option value="@PerfilEnum.Padrao">Padrão</option>
@@ -41,11 +40,11 @@
     </div>
 
     <div class="form-group">
-        <label for="telefone">Senha:</label>
-        <input type="text" asp-for="Senha" class="form-control" placeholder="Digite a senha">
+        <label for="senha">Senha:</label>
+        <input type="password" asp-for="Senha" class="form-control" placeholder="Digite a senha">
         @Html.ValidationMessageFor(x => x.Senha)
     </div>
 
-    <button type="submit" class="btn btn-primary btn-block">Adicionar contato</button>
-    <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+    <button type="submit" class="btn btn-primary btn-block">Adicionar usuário</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
 </form>
